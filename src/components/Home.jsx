@@ -76,6 +76,8 @@ const Home = () => {
         });
         var data = await response.json();
         console.log(data); //here you can see the response object
+        
+        //as we know fetch return promise if we wanna handle the error the we can use .then and .then to handle both the promises returned
     };
     return (<>
         <Grid container className={classes.container}>
